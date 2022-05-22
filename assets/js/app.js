@@ -51,5 +51,30 @@ switch(smple){
     default:
         isit +="try to ansower quit";
 }
+alert(isit);
+//start the loops 
+// for loop condition
 
-alert(isit)
+for (i=0; i<20; i++){
+    document.write(i+"Hello world");
+}
+//start the while loop
+
+let start= 10;
+ while(start<=30){
+     document.write('first one');
+     start++;
+ }
+
+ //js functionss
+
+ function person(){
+     alert("Hello world")
+ }
+ 
+
+ function multipli(num){
+     return num*num*num;
+ }
+
+document.write(multipli(7));
