@@ -12,6 +12,6 @@ let car={
     name:"corolla",
     color:'black',
     price:3000,
-    distinct: function start(){ return "5km"},
+    distinct: function start(){ return "km"},
 }
 alert(car.name+car.color+car.distinct());
