@@ -16,7 +16,7 @@ let car={
 }
 alert(car.name+car.color+car.distinct());
 
-let str="Pldsdaase locate wheree 'locate' occu  r  s  !       ";
+let str="Pldsdaasewheree 'locate' occu  r  s  !       ";
 let len=str.indexOf('locate');
 let lenn=str.lastIndexOf('ocate');
 let gom=str[0];
