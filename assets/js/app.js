@@ -15,3 +15,11 @@ let car={
     distinct: function start(){ return "km"},
 }
 alert(car.name+car.color+car.distinct());
+
+let str="Pldsdaase locate wheree 'locate' occu  r  s  !       ";
+let len=str.indexOf('locate');
+let lenn=str.lastIndexOf('ocate');
+let gom=str[0];
+let text='ABCDEFGHJK';
+text.split("| ,");
+alert(len+" "+lenn+"  "+gom+" "+text)
