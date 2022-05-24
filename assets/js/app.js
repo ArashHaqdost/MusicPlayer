@@ -10,7 +10,9 @@ document.getElementById('audioo').innerHTML= celiceos();
 
 let car={
     name:"corolla",
-    
+    age:34,
+    color:'red',
+
     distinct: function start(){ return "km"},
 }
 alert(car.name+car.color+car.distinct());
