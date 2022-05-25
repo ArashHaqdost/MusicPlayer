@@ -48,8 +48,3 @@ let stu={
 }
 let keyr=prompt('what kind of informa tionn');
 alert(stu[keyr]);
-
-let furt= prompt('whic frout do you wwant buy?','apple');
-let bag={
-};
-alert(bag[furt]=5);
