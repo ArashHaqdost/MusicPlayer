@@ -21,4 +21,35 @@ let str="Pldsdaasewheree 'locate' occu  r  s  !       ";
 let len=str.indexOf('locate');
 let text='ABCDEFGHJK';
 text.split("| ,");
-alert(len+" "+lenn+"  "+gom+" "+text)
+
+let age= prompt('how old are you?', 20);
+let showw=document.getElementById('audiooo').innerHTML=age;
+alert(`your age is ${age} this is good `+ age)
+
+let isBoss= confirm('are you a manager?');
+alert(isBoss);
+let name=prompt('what is your name?');
+alert(`your name is ${name}`);
+
+let user={
+    name:"Alia",
+    age:17,
+    
+}
+
+let key= prompt("what do you want to know from alia?", "name");
+
+alert(user[key]);
+
+let stu={
+    f:"blob blob blbob",
+    g:3434,
+    h:"kdjfij",
+}
+let keyr=prompt('what kind of informa tionn');
+alert(stu[keyr]);
+
+let furt= prompt('whic frout do you wwant buy?','apple');
+let bag={
+};
+alert(bag[furt]=5);
