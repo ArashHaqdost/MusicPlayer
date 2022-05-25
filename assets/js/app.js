@@ -34,6 +34,7 @@ alert(`your name is ${name}`);
 let user={
     name:"Alia",
     age:17,
+    old:'young'
     
 }
 
