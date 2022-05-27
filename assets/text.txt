@@ -1,0 +1,1 @@
+added the next forward btn in js audio fanctioanlty in js
