@@ -167,8 +167,8 @@ body{
 /* footer styles */
 .footer {
     position: absolute  ;
+    top: 98%;
     width: 30%;
-    position: fixed;    
     bottom: 40px;    
     display: flex;
     flex-direction: row;
