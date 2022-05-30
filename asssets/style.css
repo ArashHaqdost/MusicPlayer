@@ -142,6 +142,7 @@ body{
 
 .controls div svg{
     cursor: pointer;
+    color: #fff;
 
 }
 .current_time,.duration_time{
