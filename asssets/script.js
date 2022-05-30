@@ -19,19 +19,19 @@ let songs = [
         name:'Arash',
         path:'../music/2.mp3',
         artist:'artist1',
-        imgcover:'../img/cover3.jpg'
+        imgcover:'/img/cover3.jpg'
     },
     {
         name:'MurtazaPashi',
         path:'../music/2.mp3',
         artist:'artist2',
-        imgcover:'../img/cover2.jpg'
+        imgcover:'/img/cover2.jpg'
     },
 {
     name:'Anosh',
     path:'../music/3.mp3',
     artist:'delbar',
-    imgcover:'../img/coverimg1.jpg'
+    imgcover:'/img/coverimg1.jpg'
 }
 ];
 //set music up
