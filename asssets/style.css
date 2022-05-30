@@ -105,10 +105,10 @@ body{
     margin: 20px 0;
     position: relative;
 }
-.music_name,.music_artist{
+.title{
     text-align: center;
     text-transform: capitalize;
-    margin: 30px auto;
+    margin: 40px auto;
     
 }
 .music_artist{
@@ -116,7 +116,8 @@ body{
 }
 .music_name h1{
     font-size: 2rem;
-    margin-top: 40px;
+    margin: 0 !important;
+
 }
 .range-control{
     -webkit-appearance: none;
