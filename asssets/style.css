@@ -24,7 +24,7 @@ body{
 
 }
 
-    .container{
+.container{
     margin: 0 auto;
     width: 400px;
     min-height: 90vh;
@@ -71,9 +71,10 @@ body{
 .topmenu{
     position: absolute;
     top: 0;
-    display: flex;
     width: 100%;
-    justify-content: space-around;
+
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 
 }
@@ -151,11 +152,12 @@ margin-bottom: 50px;
 /* footer styles */
 .footer {
     position: absolute  ;
+    width: 30%;
     position: fixed;    
     bottom: 40px;    
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     
 }
