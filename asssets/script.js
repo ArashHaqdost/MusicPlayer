@@ -17,9 +17,9 @@ let i = 0;
 let songs = [
     {
         name:'Arash',
-        path:'../music/2.mp3',
+        path:'./music/2.mp3',
         artist:'artist1',
-        imgcover:'/img/cover3.jpg'
+        imgcover:'./img/cover3.jpg'
     },
     {
         name:'MurtazaPashi',
