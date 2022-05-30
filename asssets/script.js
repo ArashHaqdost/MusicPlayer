@@ -23,13 +23,13 @@ let songs = [
     },
     {
         name:'MurtazaPashi',
-        path:'../music/2.mp3',
+        path:'./music/2.mp3',
         artist:'artist2',
         imgcover:'/img/cover2.jpg'
     },
 {
     name:'Anosh',
-    path:'../music/3.mp3',
+    path:'./music/3.mp3',
     artist:'delbar',
     imgcover:'/img/coverimg1.jpg'
 }
