@@ -11,6 +11,7 @@ const currentTime=document.querySelector('.current_time');
 const durationTime=document.querySelector('.duration_time'); 
 const currentMusic = document.querySelector('#audio');
 const imageCover= document.querySelector('img');
+const plauIcon=document.querySelector('.play_icon');
 let isplay = false;
 let i = 0;
 //add the songs
@@ -25,13 +26,13 @@ let songs = [
         name:'MurtazaPashi',
         path:'./music/2.mp3',
         artist:'artist2',
-        imgcover:'/img/cover2.jpg'
+        imgcover:'./img/cover2.jpg'
     },
 {
     name:'Anosh',
     path:'./music/3.mp3',
     artist:'delbar',
-    imgcover:'/img/coverimg1.jpg'
+    imgcover:'./img/coverimg1.jpg'
 }
 ];
 //set music up
@@ -59,16 +60,24 @@ function player(){
 function pauseMusic(){
     currentMusic.pause();
     isplay = false;
+    playBtn.innerHTML=`
+    <i class="fa fa-play-circle fa-2x play_icon"></i>
+    
+    `;
 }
 
 function playMusic(){
     currentMusic.play();
     isplay = true;
+    playBtn.innerHTML=`
+    <i class="fa fa-pause-circle fa-2x  play_icon"></i>
+    `;
+    
 }
 //the img durations
 playBtn.addEventListener('click', ()=>{
     imageCover.classList.toggle('imgduration');
-    playBtn.classList.toggle('pause');
+    // playBtn.classList.toggle('pause');
     
 });
 
@@ -132,3 +141,40 @@ function backBt(){
     setMusic(currentMusic);
     playBtn.click();
 };
+
+//set music
+function nextMusic(){
+    if(i<songs.length-1){
+        i+=1;
+    }else{
+        i=0;
+    }
+    setMusic(i);
+    playMusic();
+
+}
+function backMusic(){
+    if(i>0){
+        i -=1;
+    }else{
+        i = songs.length-1;
+    }
+    setMusic(i);
+    playMusic();
+}
+//keyes 
+
+window.addEventListener('keydown',(e)=>{
+    if(e.keyCode===32){
+        player();
+    }else if(e.keyCode===34){
+        nextMusic()
+    }else if(e.keyCode===33){
+        backMusic();
+    }
+    else if(e.keyCode===39){
+        fastForward();
+    }else if(e.keyCode===37){
+        fastBack();
+    }
+})
