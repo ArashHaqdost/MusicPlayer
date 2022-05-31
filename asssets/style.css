@@ -80,10 +80,16 @@ body{
     width: 100%;
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
     align-items: center;
-
+    
+}
+.topmenu h1{
+    top: 0px;
+    display: inline;
 }
 .subMenu{
+    cursor: pointer;
     position: absolute;
     top:50px;
     width: 100%;
@@ -93,9 +99,9 @@ body{
 }
 .details{
   position: absolute;
-  top: 50%;
+  top: 55%;
   width: 90%;
-  left: 6%;
+  /* left: 6%; */
 
 }
 
@@ -136,11 +142,11 @@ body{
     -webkit-appearance: none;
     width: 1px;
     height: 20px;
-    background-color: #ddd;
+    background-color: rgb(209, 58, 58);
     box-shadow: -400px 0 0 400px #fff;
 }
 
-.controls div svg{
+.controls div{
     cursor: pointer;
     color: #fff;
 
@@ -180,18 +186,44 @@ body{
 .footer span{
     padding: 0 40px;
 }
-/* .ply_btn{
+.footer span i{
+
+    cursor: pointer;
+}
+.footer span i:hover{
+    color: red;
+
+}
+#Id100{
+    position: absolute;
+    right: 25px;
+
+}
+/* .ply_btn span{
+    position: absolute;
+    top: 50%;
+    right:-20%;
+    transform: translateY(-50%);
+    width: 6px ;
+    height: 24px;
+    border-radius: 2px;
+    background: var(--dark);
+    transition: .5s;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+ } */
+  /* .ply_btn{
    
     border-radius: 50%;
     background-color: hsl(204, 29%, 93%);
     cursor: pointer;
     border: none;
 }
-.ply_btn .play{
+.ply_btn {
     position: absolute;
     top:20%;
     left: 15%;
-}
+} 
+
 .paus_svg{
     position: absolute;
     top: 20%;
